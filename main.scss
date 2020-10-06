@@ -1,0 +1,73 @@
+.container {
+  $size: 100px;
+  .item {
+    width: $size;
+    height: $size;
+    background: tomato;
+  }
+}
+
+/* 상위 선택자 참조 */
+.btn {
+  width: 100px;
+  height: 100px;
+  &.active {
+    color: red;
+  }
+}
+
+.fs {
+  &-small {
+    font-size: 14px;
+  }
+  &-medium {
+    font-size: 16px;
+  }
+  &-large {
+    font-size: 18px;
+  }
+}
+
+/* 중첩 벗어나기 */
+.list {
+  $w: 100px;
+  $h: 50px;
+  li {
+    width: $w;
+    height: $h;
+
+    @at-root .box {
+      width: $w;
+      height: $h;
+    }
+  }
+}
+
+
+
+/* 중첩된 속성 */
+.list {
+  li {
+    margin: {
+      top: 10px;
+      left: 20px;
+    }
+    font: {
+      weight: bold;
+      size: 20px;
+    }
+  }
+}
+
+/* 변수- $변수이름 : 값 */
+$color-primary: #e96900;
+$url-images: "/images/";
+$wt: 210px;
+
+.box {
+  width: $wt;
+  margin-left: $wt;
+  background: $color-primary url($url-images + "1. 주석.png");
+}
+
+@import "header", "footer";

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.container .item {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+}
+
+/* 상위 선택자 참조 */
+.btn {
+  width: 100px;
+  height: 100px;
+}
+.btn.active {
+  color: red;
+}
+
+.fs-small {
+  font-size: 14px;
+}
+.fs-medium {
+  font-size: 16px;
+}
+.fs-large {
+  font-size: 18px;
+}
+
+/* 중첩 벗어나기 */
+.list li {
+  width: 100px;
+  height: 50px;
+}
+.box {
+  width: 100px;
+  height: 50px;
+}
+
+/* 중첩된 속성 */
+.list li {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 변수- $변수이름 : 값 */
+.box {
+  width: 210px;
+  margin-left: 210px;
+  background: #e96900 url("/1. 주석.bb31c385.png");
+}
+
+header {
+  font-size: 20px;
+}
+
+section {
+  margin: 10px auto;
+}
+
+footer {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
