@@ -6,11 +6,11 @@
 }
 
 /* 상위 선택자 참조 */
-.btn {
+.btn, .btn-danger {
   width: 100px;
   height: 100px;
 }
-.btn.active {
+.btn.active, .active.btn-danger {
   color: red;
 }
 
@@ -59,6 +59,223 @@ section {
 
 footer {
   background-color: gray;
+}
+
+/* 논리 연산 */
+.item {
+  display: block;
+  width: 400px;
+}
+
+/* mixin */
+.box1 {
+  width: 100px;
+  height: 100px;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+}
+
+.box3 {
+  width: 200px;
+  height: 150px;
+}
+
+.box4 {
+  width: 100px;
+  height: 200px;
+}
+
+/* 믹스인은 선택자를 포함가능하고 상위요소 참조(&)도 할 수 있음. */
+.box1 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: orange;
+}
+.box1::after {
+  content: "!!";
+}
+.box1 span.icon {
+  background-color: #e96900;
+}
+
+/* 가변 인수 */
+.box {
+  width: 100px;
+  height: 200px;
+  background: url("/1. 주석.bb31c385.png") no-repeat 10px 20px, url("/2. 데이터 타입.721fc6eb.png") no-repeat;
+}
+
+/* 가변 인수를 매개변수에 사용 */
+div {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+span {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+/* content */
+div {
+  color: red;
+  background-color: blue;
+  border-color: blue;
+}
+
+/* extend */
+.btn, .btn-danger {
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
+}
+
+.btn-danger {
+  background: red;
+}
+
+/* 함수 */
+.container {
+  width: 1200px;
+}
+.container .item:nth-child(1) {
+  width: 100px;
+}
+.container .item:nth-child(2) {
+  width: 800px;
+}
+.container .item:nth-child(3) {
+  width: 300px;
+}
+
+/* if 함수 */
+div {
+  width: 500px;
+}
+
+/* if 지시어 */
+div {
+  color: #FE9A2E;
+}
+
+div {
+  width: 200px;
+  height: 800px;
+}
+
+.box1 {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.box2 {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* for */
+.through:nth-child(1) {
+  width: 20px;
+}
+
+.through:nth-child(2) {
+  width: 40px;
+}
+
+.through:nth-child(3) {
+  width: 60px;
+}
+
+.to:nth-child(1) {
+  width: 20px;
+}
+
+.to:nth-child(2) {
+  width: 40px;
+}
+
+/* each */
+.fruits li.apple {
+  background: apple;
+}
+.fruits li.orange {
+  background: orange;
+}
+.fruits li.banana {
+  background: banana;
+}
+.fruits li.mango {
+  background: mango;
+}
+
+.fruits li:nth-child(1) {
+  left: 50px;
+}
+.fruits li:nth-child(2) {
+  left: 100px;
+}
+.fruits li:nth-child(3) {
+  left: 150px;
+}
+.fruits li:nth-child(4) {
+  left: 200px;
+}
+
+.box-apple {
+  background: korea;
+}
+
+.box-orange {
+  background: china;
+}
+
+.box-banana {
+  background: japan;
+}
+
+.box-apple {
+  background: korea;
+}
+
+.box-orange {
+  background: china;
+}
+
+.box-banana {
+  background: japan;
+}
+
+/* while */
+.item-6 {
+  width: 12px;
+}
+
+.item-4 {
+  width: 8px;
+}
+
+.item-2 {
+  width: 4px;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

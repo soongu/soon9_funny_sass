@@ -1,5 +1,6 @@
 .container {
   $size: 100px;
+
   .item {
     width: $size;
     height: $size;
@@ -11,6 +12,7 @@
 .btn {
   width: 100px;
   height: 100px;
+
   &.active {
     color: red;
   }
@@ -20,9 +22,11 @@
   &-small {
     font-size: 14px;
   }
+
   &-medium {
     font-size: 16px;
   }
+
   &-large {
     font-size: 18px;
   }
@@ -32,6 +36,7 @@
 .list {
   $w: 100px;
   $h: 50px;
+
   li {
     width: $w;
     height: $h;
@@ -42,7 +47,6 @@
     }
   }
 }
-
 
 
 /* 중첩된 속성 */
@@ -71,3 +75,279 @@ $wt: 210px;
 }
 
 @import "header", "footer";
+
+/* 논리 연산 */
+$w: 100px;
+.item {
+  display: block;
+  @if ($w > 50px or $w < 90px) {
+    width: 400px;
+  }
+}
+
+/* mixin */
+
+@mixin size($w: 100px, $h: 100px) {
+  width: $w;
+  height: $h;
+}
+
+.box1 {
+  @include size(100px, 100px);
+}
+
+.box2 {
+  @include size;
+}
+
+.box3 {
+  @include size(200px, 150px);
+}
+
+.box4 {
+  @include size($h: 200px);
+}
+
+/* 믹스인은 선택자를 포함가능하고 상위요소 참조(&)도 할 수 있음. */
+@mixin large-text {
+  font: {
+    size: 22px;
+    weight: bold;
+    family: sans-serif;
+  }
+  color: orange;
+
+  &::after {
+    content: "!!";
+  }
+
+  span.icon {
+    background-color: #e96900;
+  }
+}
+
+.box1 {
+  @include large-text;
+}
+
+/* 가변 인수 */
+@mixin var($w, $h, $bg...) {
+  width: $w;
+  height: $h;
+  background: $bg;
+}
+
+.box {
+  @include var(
+                  100px,
+                  200px,
+                  url("/images/1. 주석.png") no-repeat 10px 20px,
+                  url("/images/2. 데이터 타입.png") no-repeat
+  );
+}
+
+/* 가변 인수를 매개변수에 사용 */
+
+@mixin font(
+  $style: normal,
+  $weight: normal,
+  $size: 16px,
+  $family: sans-serif
+) {
+  font: {
+    style: $style;
+    weight: $weight;
+    size: $size;
+    family: $family;
+  }
+}
+div {
+  // 매개변수 순서와 개수에 맞게 전달
+  $font-values: italic, bold, 16px, sans-serif;
+  @include font($font-values...);
+}
+span {
+  // 필요한 값만 키워드 인수로 변수에 담아 전달
+  $font-values: (style: italic, size: 22px);
+  @include font($font-values...);
+}
+
+
+/* content */
+$color: red;
+
+@mixin colors($color: blue) {
+  // Mixin의 범위
+  @content;
+  background-color: $color;
+  border-color: $color;
+}
+
+div {
+  @include colors() {
+    // 스타일 블록이 정의된 범위
+    color: $color;
+  }
+}
+
+/* extend */
+.btn {
+  padding: 10px;
+  margin: 10px;
+  background-color: blue;
+}
+
+.btn-danger {
+  @extend .btn;
+  background: red;
+}
+
+/* 함수 */
+@function columns($number: 1, $columns: 12, $width: 1200px) {
+  @return $width * ($number / $columns);
+}
+
+.container {
+  $width: 1200px;
+  width: $width;
+  .item:nth-child(1) {
+    width: columns();
+  }
+  .item:nth-child(2) {
+    width: columns(8, 12, $width);
+  }
+  .item:nth-child(3) {
+    width: columns(3,  $width: $width);
+  }
+}
+
+/* if 함수 */
+$w: 500px;
+div {
+  width: if($w > 300px, $w, null);
+}
+
+/* if 지시어 */
+$color: orange;
+div {
+  @if $color == strawberry {
+    color: #FE2E2E;
+  } @else if $color == orange {
+    color: #FE9A2E;
+  } @else if $color == banana {
+    color: #FFFF00;
+  } @else {
+    color: #2A1B0A;
+  }
+}
+
+@function limitSize($size) {
+  @if $size >= 0 and $size <= 200px {
+    @return 200px;
+  } @else {
+    @return 800px;
+  }
+}
+
+div {
+  width: limitSize(180px);
+  height: limitSize(340px);
+}
+
+@mixin pCenter($w, $h, $p: absolute) {
+  @if
+  $p == absolute
+    or $p == fixed
+    or not $p == relative
+    or not $p == static
+  {
+    width: if(unitless($w), #{$w}px, $w);
+    height: if(unitless($h), #{$h}px, $h);
+    position: $p;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.box1 {
+  @include pCenter(10px, 20px);
+}
+.box2 {
+  @include pCenter(50, 50, fixed);
+}
+.box3 {
+  @include pCenter(100, 200, relative);
+}
+
+/* for */
+// 1부터 3번 반복
+@for $i from 1 through 3 {
+  .through:nth-child(#{$i}) {
+    width : 20px * $i
+  }
+}
+
+// 1부터 3 직전까지만 반복(2번 반복)
+@for $i from 1 to 3 {
+  .to:nth-child(#{$i}) {
+    width : 20px * $i
+  }
+}
+
+/* each */
+// List Data
+$fruits: (apple, orange, banana, mango);
+
+.fruits {
+  @each $fruit in $fruits {
+    li.#{$fruit} {
+      background: $fruit;
+    }
+  }
+}
+
+$fruits: (apple, orange, banana, mango);
+
+.fruits {
+  @each $fruit in $fruits {
+    $i: index($fruits, $fruit);
+    li:nth-child(#{$i}) {
+      left: 50px * $i;
+    }
+  }
+}
+
+$apple: (apple, korea);
+$orange: (orange, china);
+$banana: (banana, japan);
+
+@each $fruit, $country in $apple, $orange, $banana {
+  .box-#{$fruit} {
+    background: #{$country};
+  }
+}
+
+$fruits-data: (
+        apple: korea,
+        orange: china,
+        banana: japan
+);
+
+@each $fruit, $country in $fruits-data {
+  .box-#{$fruit} {
+    background: #{$country};
+  }
+}
+
+/* while */
+$i: 6;
+
+@while $i > 0 {
+  .item-#{$i} {
+    width: 2px * $i;
+  }
+  $i: $i - 2;
+}

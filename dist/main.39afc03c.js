@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\KITT\\Desktop\\developing\\css\\soon9_funny_sass\\images\\1. 주석.png":[["1. 주석.bb31c385.png","images/1. 주석.png"],"images/1. 주석.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\KITT\\Desktop\\developing\\css\\soon9_funny_sass\\images\\1. 주석.png":[["1. 주석.bb31c385.png","images/1. 주석.png"],"images/1. 주석.png"],"C:\\Users\\KITT\\Desktop\\developing\\css\\soon9_funny_sass\\images\\2. 데이터 타입.png":[["2. 데이터 타입.721fc6eb.png","images/2. 데이터 타입.png"],"images/2. 데이터 타입.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

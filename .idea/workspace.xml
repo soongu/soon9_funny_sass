@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e418b61-5d05-4eb4-ab6a-bb4aacaae903" name="Default Changelist" comment="" />
+    <list default="true" id="1e418b61-5d05-4eb4-ab6a-bb4aacaae903" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/13-6. 색상 연산.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/13-7. 논리연산.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-1. 믹스인.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-10. 가변인수2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-2. 믹스인1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-3. 믹스인2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-4. 인클루드1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-5. 인클루드2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-6. 인수.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-7. 인수의 기본값.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-8. 키워드인수.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/14-9. 가변인수1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/15-1. content1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/15-2. content2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/16-1. extend1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/16-2. extend2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/17-1. 함수1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/17-2. 함수2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/17-3. 함수3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/18-1. if함수.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/18-2. if 지시어.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/18-3. if 지시어2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/19-1. for1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/19-2. for2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/20-1. each1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/20-2. each2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/20-3. each3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/20-4. each4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cache/c1/23d681429c79bbe48ac87638d846ea.json" beforeDir="false" afterPath="$PROJECT_DIR$/.cache/c1/23d681429c79bbe48ac87638d846ea.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.39afc03c.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.39afc03c.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.39afc03c.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.39afc03c.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.39afc03c.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.39afc03c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/main.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +72,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iTwk6mLjeqNHLk6527lRmXdlMB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -30,9 +95,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\KITT\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1e418b61-5d05-4eb4-ab6a-bb4aacaae903" name="Default Changelist" comment="" />
@@ -40,18 +109,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601945029842</updated>
-      <workItem from="1601945031151" duration="4410000" />
+      <workItem from="1601945031151" duration="11287000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="699" y="343" key="#Notifications" timestamp="1601951483308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="699" y="343" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601951483308" />
     <state x="626" y="296" key="EditFileWatcherDialog" timestamp="1601949496043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="296" key="EditFileWatcherDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601949496043" />
+    <state x="817" y="417" width="580" height="205" key="Github.ShareDialog" timestamp="1601951355566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="817" y="417" width="580" height="205" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601951355566" />
+    <state x="713" y="214" key="Github.UntrackedFilesDialog" timestamp="1601951382933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="214" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601951382933" />
     <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1601947535771">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -68,5 +163,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601947535770" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1601951605602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601951605602" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601951339893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601951339893" />
   </component>
 </project>
